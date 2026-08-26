@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Modern ATS-Optimized Web Resume Stylesheet (Netlify & Privacy Enhanced)
+   Modern ATS-Optimized Web Resume Stylesheet (Netlify, Privacy & Print 1-Page)
    Author: James Phillip De Guzman - Junior Web Developer
    ========================================================================== */
 
@@ -56,7 +56,7 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 14.5px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
@@ -65,9 +65,9 @@ body {
   font-family: var(--font-main);
   background-color: var(--bg-page);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.5;
   min-height: 100vh;
-  padding: 2.5rem 1rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,7 +77,7 @@ body {
 .resume-toolbar {
   width: 100%;
   max-width: 960px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,11 +89,11 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
   color: var(--text-muted);
   background: var(--bg-surface);
-  padding: 0.45rem 0.9rem;
+  padding: 0.4rem 0.85rem;
   border-radius: var(--radius-full);
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
@@ -123,9 +123,9 @@ body {
   align-items: center;
   gap: 0.45rem;
   font-family: var(--font-main);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 0.9rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   background: var(--bg-surface);
@@ -170,14 +170,14 @@ body {
 
 /* Top Accent Header Band */
 .header-accent-band {
-  height: 18px;
+  height: 14px;
   background: linear-gradient(90deg, #0f172a 0%, #1e293b 70%, var(--accent-gold) 100%);
   width: 100%;
 }
 
 /* --- Header Section --- */
 .resume-header {
-  padding: 2.5rem 3rem 2rem 3rem;
+  padding: 1.8rem 2.5rem 1.4rem 2.5rem;
   text-align: center;
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border-color);
@@ -186,7 +186,7 @@ body {
 
 .header-frame {
   display: inline-block;
-  padding: 1rem 2.5rem;
+  padding: 0.75rem 2.2rem;
   border: 2px solid #1e293b;
   position: relative;
   background: #ffffff;
@@ -205,23 +205,23 @@ body {
 
 .resume-name {
   font-family: var(--font-heading);
-  font-size: 2.35rem;
+  font-size: 2.1rem;
   font-weight: 800;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #0f172a;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .resume-title {
   font-family: var(--font-main);
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #475569;
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
   display: inline-block;
   position: relative;
   padding: 0 1rem;
@@ -231,19 +231,19 @@ body {
   content: '';
   display: block;
   width: 100%;
-  height: 3px;
+  height: 2.5px;
   background: #1e293b;
-  margin: 0.4rem auto 0 auto;
+  margin: 0.35rem auto 0 auto;
 }
 
 /* Header Links Bar */
 .header-quick-links {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .quick-link-item {
@@ -267,65 +267,65 @@ body {
 /* --- Two-Column Layout --- */
 .resume-body {
   display: grid;
-  grid-template-columns: 340px 1fr;
-  min-height: 900px;
+  grid-template-columns: 320px 1fr;
+  min-height: 800px;
 }
 
 /* --- Sidebar Column --- */
 .resume-sidebar {
   background: var(--bg-sidebar);
-  padding: 2.2rem 1.8rem;
+  padding: 1.6rem 1.4rem;
   border-right: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 /* --- Main Content Column --- */
 .resume-main {
   background: var(--bg-surface);
-  padding: 2.2rem 2.4rem;
+  padding: 1.6rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2.2rem;
+  gap: 1.5rem;
 }
 
 /* --- Section Titles & Badges --- */
 .section-title {
   font-family: var(--font-heading);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-light);
   background: var(--bg-section-badge);
-  padding: 0.45rem 1rem;
+  padding: 0.35rem 0.85rem;
   display: inline-block;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.85rem;
   border-radius: var(--radius-sm);
   position: relative;
 }
 
 .sidebar-title {
   font-family: var(--font-heading);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-primary);
   border-bottom: 2px solid #1e293b;
-  padding-bottom: 0.4rem;
-  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .sidebar-title-badge {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   background: #e2e8f0;
   color: #475569;
-  padding: 0.15rem 0.45rem;
+  padding: 0.12rem 0.4rem;
   border-radius: var(--radius-sm);
   letter-spacing: normal;
   font-weight: 600;
@@ -336,7 +336,7 @@ body {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 1.1rem;
+  padding: 0.95rem;
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-normal);
   position: relative;
@@ -349,19 +349,19 @@ body {
 
 .contact-tabs-nav {
   display: flex;
-  gap: 0.35rem;
+  gap: 0.3rem;
   background: #f1f5f9;
-  padding: 0.25rem;
+  padding: 0.2rem;
   border-radius: var(--radius-sm);
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.75rem;
 }
 
 .tab-btn {
   flex: 1;
   font-family: var(--font-main);
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   font-weight: 600;
-  padding: 0.35rem 0.4rem;
+  padding: 0.3rem 0.35rem;
   background: transparent;
   border: none;
   border-radius: 4px;
@@ -383,24 +383,24 @@ body {
 .privacy-banner {
   display: flex;
   align-items: flex-start;
-  gap: 0.6rem;
-  font-size: 0.8rem;
+  gap: 0.5rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
-  line-height: 1.4;
-  margin-bottom: 0.85rem;
+  line-height: 1.38;
+  margin-bottom: 0.75rem;
 }
 
 .privacy-icon {
   flex-shrink: 0;
   color: var(--accent-gold-dark);
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 /* Unlock Passcode Form */
 .unlock-form {
   display: flex;
   flex-direction: column;
-  gap: 0.55rem;
+  gap: 0.45rem;
 }
 
 .passcode-wrapper {
@@ -411,9 +411,9 @@ body {
 
 .passcode-input, .netlify-form-input, .netlify-form-textarea {
   width: 100%;
-  padding: 0.55rem 0.8rem;
+  padding: 0.48rem 0.7rem;
   font-family: var(--font-main);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   background: #f8fafc;
@@ -430,7 +430,7 @@ body {
 
 .netlify-form-textarea {
   resize: vertical;
-  min-height: 70px;
+  min-height: 60px;
 }
 
 .input-shake {
@@ -447,13 +447,13 @@ body {
 
 .unlock-btn, .netlify-submit-btn {
   font-family: var(--font-main);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: #ffffff;
   background: #1e293b;
   border: none;
   border-radius: var(--radius-sm);
-  padding: 0.55rem 1rem;
+  padding: 0.48rem 0.9rem;
   cursor: pointer;
   transition: all var(--transition-fast);
   display: inline-flex;
@@ -467,29 +467,25 @@ body {
   transform: translateY(-1px);
 }
 
-.unlock-btn:active, .netlify-submit-btn:active {
-  transform: translateY(0);
-}
-
 .unlock-hint {
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
-  margin-top: 0.2rem;
+  margin-top: 0.15rem;
   text-align: center;
 }
 
 .unlock-hint code {
   background: #f1f5f9;
-  padding: 0.1rem 0.35rem;
+  padding: 0.1rem 0.3rem;
   border-radius: 4px;
   font-weight: 600;
   color: var(--text-secondary);
 }
 
 .unlock-status {
-  font-size: 0.78rem;
-  margin-top: 0.4rem;
-  min-height: 1.2rem;
+  font-size: 0.76rem;
+  margin-top: 0.35rem;
+  min-height: 1.1rem;
   transition: all var(--transition-fast);
 }
 
@@ -507,28 +503,28 @@ body {
 .netlify-contact-form {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.2rem;
 }
 
 .form-label {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--text-secondary);
 }
 
 .fallback-contact {
-  margin-top: 0.85rem;
-  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
   border-top: 1px dashed var(--border-color);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: var(--text-muted);
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
 .fallback-contact a {
@@ -545,7 +541,7 @@ body {
 .unlocked-state {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.7rem;
   animation: fadeIn 0.4s ease-out forwards;
 }
 
@@ -557,32 +553,32 @@ body {
 .unlocked-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  font-size: 0.72rem;
+  gap: 0.3rem;
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #065f46;
   background: #d1fae5;
-  padding: 0.25rem 0.6rem;
+  padding: 0.2rem 0.55rem;
   border-radius: var(--radius-sm);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .contact-info-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
-  font-size: 0.82rem;
-  padding: 0.35rem 0;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  padding: 0.3rem 0;
   border-bottom: 1px solid #f1f5f9;
 }
 
@@ -593,14 +589,14 @@ body {
 .contact-label {
   font-weight: 600;
   color: var(--text-muted);
-  width: 45px;
+  width: 42px;
   flex-shrink: 0;
 }
 
 .contact-link, .contact-static {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
   color: var(--text-primary);
   text-decoration: none;
   font-weight: 600;
@@ -613,8 +609,8 @@ body {
 }
 
 .copy-mini-btn {
-  font-size: 0.7rem;
-  padding: 0.15rem 0.45rem;
+  font-size: 0.68rem;
+  padding: 0.12rem 0.4rem;
   border-radius: 4px;
   background: #f1f5f9;
   border: 1px solid var(--border-color);
@@ -637,17 +633,17 @@ body {
 .relock-wrapper {
   display: flex;
   justify-content: flex-end;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
 }
 
 .relock-btn {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
   background: none;
   border: none;
   cursor: pointer;
   text-decoration: underline;
-  padding: 0.2rem;
+  padding: 0.15rem;
 }
 
 .relock-btn:hover {
@@ -662,59 +658,59 @@ body {
 .education-list {
   display: flex;
   flex-direction: column;
-  gap: 1.15rem;
+  gap: 1rem;
 }
 
 .edu-item {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.15rem;
 }
 
 .edu-degree-title {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 .edu-institution {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: #2563eb;
 }
 
 .edu-focus {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-secondary);
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 .edu-status-badge {
   display: inline-block;
   align-self: flex-start;
-  margin-top: 0.25rem;
-  font-size: 0.72rem;
+  margin-top: 0.2rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   background: #eff6ff;
   color: #1d4ed8;
   border: 1px solid #bfdbfe;
-  padding: 0.15rem 0.55rem;
+  padding: 0.12rem 0.5rem;
   border-radius: var(--radius-sm);
 }
 
 .edu-badge {
   display: inline-block;
   align-self: flex-start;
-  margin-top: 0.25rem;
-  font-size: 0.72rem;
+  margin-top: 0.2rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   background: #fef3c7;
   color: #92400e;
   border: 1px solid #fde68a;
-  padding: 0.15rem 0.55rem;
+  padding: 0.12rem 0.5rem;
   border-radius: var(--radius-sm);
 }
 
@@ -722,52 +718,45 @@ body {
 .skills-container {
   display: flex;
   flex-direction: column;
-  gap: 1.15rem;
+  gap: 0.95rem;
 }
 
 .skill-category {
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: 0.35rem;
 }
 
 .skill-category-title {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--text-primary);
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
 }
 
 .skill-category-title::before {
   content: '•';
   color: #1e293b;
-  font-size: 1.1rem;
-}
-
-.skill-tags-wrapper {
-  font-size: 0.83rem;
-  color: var(--text-secondary);
-  line-height: 1.55;
-  padding-left: 0.85rem;
+  font-size: 1rem;
 }
 
 .skill-pill-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.35rem;
   list-style: none;
-  padding-left: 0.85rem;
+  padding-left: 0.75rem;
 }
 
 .skill-pill {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 600;
   background: #ffffff;
   color: #1e293b;
   border: 1px solid var(--border-color);
-  padding: 0.2rem 0.55rem;
+  padding: 0.18rem 0.5rem;
   border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
 }
@@ -783,23 +772,23 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.65rem;
 }
 
 .cert-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.6rem;
-  font-size: 0.85rem;
+  gap: 0.55rem;
+  font-size: 0.82rem;
   color: var(--text-secondary);
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 .cert-icon {
   flex-shrink: 0;
   color: var(--accent-emerald);
   font-weight: 800;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   margin-top: 1px;
 }
 
@@ -815,15 +804,15 @@ body {
 }
 
 .cert-subtext {
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   color: var(--text-muted);
 }
 
 /* --- Main Column: Objective Section --- */
 .objective-text {
-  font-size: 0.94rem;
+  font-size: 0.88rem;
   color: var(--text-secondary);
-  line-height: 1.7;
+  line-height: 1.6;
   text-align: justify;
 }
 
@@ -831,38 +820,38 @@ body {
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1.35rem;
 }
 
 .experience-item {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.35rem;
   position: relative;
 }
 
 .exp-header {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.15rem;
 }
 
 .exp-period {
   font-family: var(--font-heading);
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 700;
   color: var(--accent-gold-dark);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 .exp-title-company {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-primary);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
 }
 
 .exp-role {
@@ -880,16 +869,16 @@ body {
 
 .exp-bullet-list {
   list-style-type: disc;
-  padding-left: 1.4rem;
+  padding-left: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: 0.35rem;
 }
 
 .exp-bullet-list li {
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   color: var(--text-secondary);
-  line-height: 1.55;
+  line-height: 1.48;
 }
 
 .exp-bullet-list li strong {
@@ -899,16 +888,16 @@ body {
 /* --- Accomplishments Section --- */
 .accomplishments-list {
   list-style-type: disc;
-  padding-left: 1.4rem;
+  padding-left: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.45rem;
 }
 
 .accomplishments-list li {
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   color: var(--text-secondary);
-  line-height: 1.55;
+  line-height: 1.48;
 }
 
 .accomplishments-list li a {
@@ -928,9 +917,9 @@ body {
 
 /* --- Footer Area --- */
 .resume-footer {
-  margin-top: 2rem;
+  margin-top: 1.8rem;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
 }
 
@@ -949,29 +938,29 @@ body {
   .resume-sidebar {
     border-right: none;
     border-bottom: 1px solid var(--border-color);
-    padding: 1.8rem 1.4rem;
+    padding: 1.6rem 1.2rem;
   }
 
   .resume-main {
-    padding: 1.8rem 1.4rem;
+    padding: 1.6rem 1.2rem;
   }
 
   .resume-header {
-    padding: 1.8rem 1.2rem;
+    padding: 1.5rem 1rem;
   }
 
   .resume-name {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     letter-spacing: 0.12em;
   }
 
   .resume-title {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     letter-spacing: 0.16em;
   }
 
   .header-frame {
-    padding: 0.8rem 1.5rem;
+    padding: 0.7rem 1.4rem;
   }
 
   .resume-toolbar {
@@ -985,21 +974,32 @@ body {
 }
 
 /* ==========================================================================
-   Print Optimization Media Query (@media print)
+   Print Optimization Media Query (@media print) - STRICT 1-PAGE EXPORT
    ========================================================================== */
 @media print {
   @page {
-    margin: 12mm 15mm;
+    margin: 5mm 8mm 5mm 8mm;
     size: letter portrait;
   }
 
-  body {
-    background: #ffffff !important;
-    padding: 0 !important;
-    color: #000000 !important;
-    font-size: 13.5px;
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
+  html, body {
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #000000 !important;
+    font-size: 10.8px !important;
+    line-height: 1.32 !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+  }
+
+  /* Hide screen-only interactive widgets */
   .resume-toolbar,
   .contact-tabs-nav,
   .unlock-form,
@@ -1007,7 +1007,9 @@ body {
   .relock-wrapper,
   .copy-mini-btn,
   .resume-footer,
-  .status-dot {
+  .status-dot,
+  .sidebar-title-badge,
+  .privacy-shield-card {
     display: none !important;
   }
 
@@ -1016,93 +1018,249 @@ body {
     box-shadow: none !important;
     border: none !important;
     border-radius: 0 !important;
+    overflow: visible !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
   }
 
   .header-accent-band {
-    height: 6px !important;
-    background: #000000 !important;
+    height: 4px !important;
+    background: #0f172a !important;
   }
 
+  /* Header Section */
   .resume-header {
-    padding: 1rem 0 !important;
-    border-bottom: 2px solid #000000 !important;
+    padding: 0.35rem 0 0.4rem 0 !important;
+    border-bottom: 1.5px solid #1e293b !important;
   }
 
   .header-frame {
-    border: 2px solid #000000 !important;
-    padding: 0.6rem 1.8rem !important;
+    border: 1.5px solid #1e293b !important;
+    padding: 0.3rem 1.4rem !important;
   }
 
   .header-frame::before {
-    border-color: #000000 !important;
+    border-color: #c5a880 !important;
+    top: 2px !important;
+    left: 2px !important;
+    right: 2px !important;
+    bottom: 2px !important;
   }
 
   .resume-name {
-    color: #000000 !important;
-    font-size: 2rem !important;
+    color: #0f172a !important;
+    font-size: 1.55rem !important;
+    letter-spacing: 0.12em !important;
   }
 
   .resume-title {
-    color: #000000 !important;
+    color: #334155 !important;
+    font-size: 0.78rem !important;
+    letter-spacing: 0.16em !important;
+    margin-top: 0.25rem !important;
   }
 
   .resume-title::after {
-    background: #000000 !important;
+    height: 2px !important;
+    background: #1e293b !important;
+    margin: 0.2rem auto 0 auto !important;
   }
 
+  .header-quick-links {
+    margin-top: 0.3rem !important;
+    gap: 1.2rem !important;
+    font-size: 0.74rem !important;
+  }
+
+  .quick-link-item {
+    color: #1e293b !important;
+  }
+
+  /* Two-Column Grid */
   .resume-body {
     display: grid !important;
-    grid-template-columns: 280px 1fr !important;
+    grid-template-columns: 240px 1fr !important;
     min-height: auto !important;
+    gap: 0 !important;
   }
 
   .resume-sidebar {
     background: transparent !important;
-    padding: 1rem 1rem 0 0 !important;
-    border-right: 1px solid #ccc !important;
+    padding: 0.45rem 0.7rem 0 0 !important;
+    border-right: 1px solid #cbd5e1 !important;
+    gap: 0.65rem !important;
   }
 
   .resume-main {
-    padding: 1rem 0 0 1.2rem !important;
+    padding: 0.45rem 0 0 0.85rem !important;
+    gap: 0.65rem !important;
   }
 
+  /* Section Titles */
   .section-title {
-    background: #000000 !important;
+    background: #1e293b !important;
     color: #ffffff !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-    margin-bottom: 0.8rem !important;
-    padding: 0.3rem 0.8rem !important;
+    margin-bottom: 0.35rem !important;
+    padding: 0.2rem 0.55rem !important;
+    font-size: 0.76rem !important;
+    letter-spacing: 0.14em !important;
   }
 
   .sidebar-title {
-    border-bottom: 2px solid #000000 !important;
-    color: #000000 !important;
+    border-bottom: 1.5px solid #1e293b !important;
+    color: #0f172a !important;
+    font-size: 0.75rem !important;
+    margin-bottom: 0.35rem !important;
+    padding-bottom: 0.15rem !important;
+    letter-spacing: 0.12em !important;
   }
 
-  .privacy-shield-card {
-    border: 1px solid #ccc !important;
-    box-shadow: none !important;
-    padding: 0.8rem !important;
+  /* Education in Print */
+  .education-list {
+    gap: 0.45rem !important;
   }
 
-  .experience-item,
-  .edu-item,
+  .edu-item {
+    gap: 0.08rem !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .edu-degree-title {
+    font-size: 0.76rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .edu-institution {
+    font-size: 0.72rem !important;
+    color: #1d4ed8 !important;
+  }
+
+  .edu-focus {
+    font-size: 0.68rem !important;
+    line-height: 1.22 !important;
+  }
+
+  .edu-status-badge, .edu-badge {
+    font-size: 0.64rem !important;
+    padding: 0.05rem 0.35rem !important;
+    margin-top: 0.08rem !important;
+  }
+
+  /* Skills in Print */
+  .skills-container {
+    gap: 0.4rem !important;
+  }
+
   .skill-category {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    gap: 0.15rem !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
-  a {
-    color: #000000 !important;
-    text-decoration: none !important;
+  .skill-category-title {
+    font-size: 0.73rem !important;
+  }
+
+  .skill-pill-list {
+    gap: 0.2rem !important;
+    padding-left: 0.5rem !important;
+  }
+
+  .skill-pill {
+    font-size: 0.66rem !important;
+    padding: 0.08rem 0.35rem !important;
+    border: 1px solid #cbd5e1 !important;
+    background: #f8fafc !important;
+    color: #0f172a !important;
+  }
+
+  /* Certifications in Print */
+  .certifications-list {
+    gap: 0.35rem !important;
+  }
+
+  .cert-item {
+    font-size: 0.72rem !important;
+    gap: 0.35rem !important;
+    line-height: 1.22 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .cert-icon {
+    font-size: 0.78rem !important;
+    color: #059669 !important;
+  }
+
+  .cert-name {
+    font-size: 0.72rem !important;
+  }
+
+  .cert-subtext {
+    font-size: 0.65rem !important;
+  }
+
+  /* Main Column Sections */
+  .objective-text {
+    font-size: 0.76rem !important;
+    line-height: 1.38 !important;
+    text-align: justify !important;
+  }
+
+  /* Experience in Print */
+  .experience-list {
+    gap: 0.55rem !important;
+  }
+
+  .experience-item {
+    gap: 0.15rem !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .exp-header {
+    gap: 0.05rem !important;
   }
 
   .exp-period {
-    color: #333333 !important;
+    font-size: 0.72rem !important;
+    color: #9a7846 !important;
+  }
+
+  .exp-title-company {
+    font-size: 0.78rem !important;
   }
 
   .exp-company {
-    color: #000000 !important;
+    color: #1d4ed8 !important;
+  }
+
+  .exp-bullet-list {
+    gap: 0.18rem !important;
+    padding-left: 1.05rem !important;
+  }
+
+  .exp-bullet-list li {
+    font-size: 0.72rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Accomplishments in Print */
+  .accomplishments-list {
+    gap: 0.22rem !important;
+    padding-left: 1.05rem !important;
+  }
+
+  .accomplishments-list li {
+    font-size: 0.72rem !important;
+    line-height: 1.3 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  a {
+    color: #0f172a !important;
+    text-decoration: none !important;
   }
 }
