@@ -1,0 +1,19 @@
+# Netlify Configuration & Build Settings
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Security Headers & Content Policy
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Redirect rule for clean URLs (optional)
+[[redirects]]
+  from = "/resume"
+  to = "/index.html"
+  status = 200

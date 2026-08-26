@@ -1,0 +1,23 @@
+# Environment variables & secrets (Crucial for Privacy Shield)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Netlify dev cache & build artifacts
+.netlify/
+.netlify
+
+# Dependency directories
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.user
