@@ -21,13 +21,13 @@ exports.handler = async (event) => {
         const submittedCode = (body.passcode || '').trim().toUpperCase();
 
         // Retrieve server-side environment variables
-        const expectedCode = (process.env.RECRUITER_PASSCODE || 'WNS2026').trim().toUpperCase();
+        const expectedCode = (process.env.RECRUITER_PASSCODE || 'BPW2026').trim().toUpperCase();
         const contactEmail = process.env.CONTACT_EMAIL || 'Email configured in Netlify Environment Variables';
         const contactPhone = process.env.CONTACT_PHONE || 'Phone configured in Netlify Environment Variables';
         const contactLocation = process.env.CONTACT_LOCATION || 'Location configured in Netlify Environment Variables';
 
         // Valid passcodes
-        const validCodes = [expectedCode, 'WNS2026'];
+        const validCodes = [expectedCode, 'BPW2026'];
 
         if (validCodes.includes(submittedCode)) {
             return {

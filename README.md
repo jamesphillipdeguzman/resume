@@ -8,7 +8,7 @@ A modern, responsive, ATS-optimized, and privacy-shielded interactive web resume
 
 - **ATS-Optimized DOM Structure**: Clean, semantic HTML5 tags (`<header>`, `<main>`, `<section>`, `<article>`, `<ul>`, `<li>`, `<time>`) with structured heading hierarchy so automated ATS parsers easily index skills, education, and career experience.
 - **Dual-Mode Privacy Contact Shield**:
-  1. **Passcode Unlock via Netlify Serverless Function**: Verified against Netlify Environment Variables (`process.env.RECRUITER_PASSCODE`), returning contact PII only on successful authentication (default code: `WNS2026`).
+  1. **Passcode Unlock via Netlify Serverless Function**: Verified against Netlify Environment Variables (`process.env.RECRUITER_PASSCODE`), returning contact PII only on successful authentication (default code: `BPW2026`).
   2. **Direct Netlify HTML Form (`data-netlify="true"`)**: Recruiters can send a message directly from the page without you needing to expose an email address to web scrapers.
 - **Privacy Shield & `.gitignore` Separation**: All environment variables, sensitive local configs, and build caches are safely excluded from the public GitHub repository.
 - **Print & PDF Export Ready**: `@media print` eliminates toolbar items and forms for a clean 1–2 page PDF resume export (`Ctrl + P`).
@@ -57,7 +57,7 @@ In your Netlify Dashboard, navigate to **Site configuration** &gt; **Environment
 
 | Key | Example Value | Description |
 | :--- | :--- | :--- |
-| `RECRUITER_PASSCODE` | `WNS2026` | Custom secret passcode for recruiters |
+| `RECRUITER_PASSCODE` | `BPW2026` | Custom secret passcode for recruiters |
 | `CONTACT_EMAIL` | `your-email@example.com` | Revealed only upon entering valid passcode |
 | `CONTACT_PHONE` | `+63 9XX XXX XXXX` | Revealed only upon entering valid passcode |
 | `CONTACT_LOCATION` | `Metro Manila, PH` | Candidate work location |

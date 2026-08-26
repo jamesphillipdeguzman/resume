@@ -21,7 +21,7 @@ function initContactTabs() {
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const targetTab = btn.getAttribute('data-tab');
-            
+
             tabBtns.forEach(b => b.classList.remove('active'));
             tabPanels.forEach(p => p.classList.add('hidden'));
 
@@ -83,7 +83,7 @@ function initPasscodeUnlock() {
 
     async function handleUnlockAttempt() {
         const enteredCode = (passcodeInput.value || '').trim().toUpperCase();
-        
+
         if (!enteredCode) {
             showStatus('Please enter a passcode.', 'error');
             passcodeInput.focus();
@@ -108,7 +108,7 @@ function initPasscodeUnlock() {
             } else {
                 unlockBtn.disabled = false;
                 unlockBtn.innerHTML = 'Unlock Details';
-                showStatus(result.error || 'Invalid passcode. Try "WNS2026" or send a message.', 'error');
+                showStatus(result.error || 'Invalid passcode. Try "BPW2026" or send a message.', 'error');
                 passcodeInput.classList.add('input-shake');
                 setTimeout(() => passcodeInput.classList.remove('input-shake'), 600);
             }
@@ -123,7 +123,7 @@ function initPasscodeUnlock() {
     function onUnlockSuccess(data) {
         showStatus('Passcode verified! Unlocking contact info...', 'success');
         sessionStorage.setItem('resume_contact_unlocked', JSON.stringify(data));
-        
+
         setTimeout(() => {
             renderUnlockedContacts(data);
             lockedCard.classList.add('hidden');
@@ -151,7 +151,7 @@ function initNetlifyContactForm() {
 
     netlifyForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         submitBtn.disabled = true;
         submitBtn.innerHTML = 'Sending Message...';
         formStatus.textContent = '';
