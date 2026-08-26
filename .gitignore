@@ -4,6 +4,9 @@
 .env.*.local
 *.env
 
+# Documents & PDF files (Privacy Shield)
+*.pdf
+
 # Netlify dev cache & build artifacts
 .netlify/
 .netlify
