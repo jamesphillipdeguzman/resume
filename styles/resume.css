@@ -904,12 +904,60 @@ body {
   color: var(--text-primary);
 }
 
-/* --- Footer Area --- */
+/* --- Footer Area & Visitor Counter --- */
 .resume-footer {
-  margin-top: 1.8rem;
-  text-align: center;
-  font-size: 0.78rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+}
+
+.visitor-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.32rem 0.85rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  opacity: 0.5;
+  transition: opacity var(--transition-normal), transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: default;
+  user-select: none;
+}
+
+.visitor-counter:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+  border-color: var(--border-subtle);
+  box-shadow: var(--shadow-md);
+}
+
+.visitor-icon {
+  color: var(--accent-primary);
+  flex-shrink: 0;
+  display: block;
+}
+
+.visitor-label {
+  font-size: 0.73rem;
+  font-weight: 600;
   color: var(--text-muted);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.visitor-count {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
 }
 
 /* ==========================================================================

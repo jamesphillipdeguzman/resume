@@ -22,7 +22,6 @@ A modern, responsive, ATS-optimized, and privacy-shielded interactive web resume
 
 ```text
 ├── index.html                           # Root web entry (Netlify build output)
-├── resume.html                          # Semantic HTML5 resume markup
 ├── netlify.toml                         # Netlify build settings & security headers
 ├── .gitignore                           # Excludes .env and sensitive files
 ├── .env.example                         # Example environment variables template

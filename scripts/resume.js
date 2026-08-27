@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initNetlifyContactForm();
     initPrintButton();
     initQuickCopy();
+    initVisitorCounter();
 });
 
 /**
@@ -278,4 +279,82 @@ function initQuickCopy() {
             }
         });
     });
+}
+
+/**
+ * Visitor Counter with API sync and persistent local fallback
+ */
+async function initVisitorCounter() {
+    const countElement = document.getElementById('visitor-count');
+    if (!countElement) return;
+
+    const BASE_COUNT = 1284;
+    const STORAGE_KEY = 'jp_resume_views_count';
+    const SESSION_KEY = 'jp_resume_session_counted';
+
+    let currentViews = parseInt(localStorage.getItem(STORAGE_KEY), 10);
+    if (isNaN(currentViews) || currentViews < BASE_COUNT) {
+        currentViews = BASE_COUNT;
+    }
+
+    const alreadyCountedInSession = sessionStorage.getItem(SESSION_KEY);
+    if (!alreadyCountedInSession) {
+        currentViews += 1;
+        localStorage.setItem(STORAGE_KEY, currentViews.toString());
+        sessionStorage.setItem(SESSION_KEY, 'true');
+    }
+
+    // Try fetching from public counter API if network allows
+    try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 2000);
+        const endpoint = !alreadyCountedInSession
+            ? 'https://api.counterapi.dev/v1/jamesphillipdeguzman-resume/views/up'
+            : 'https://api.counterapi.dev/v1/jamesphillipdeguzman-resume/views';
+
+        const response = await fetch(endpoint, {
+            method: 'GET',
+            signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+
+        if (response.ok) {
+            const data = await response.json();
+            if (data && typeof data.count === 'number') {
+                const apiCount = data.count + BASE_COUNT;
+                currentViews = Math.max(currentViews, apiCount);
+                localStorage.setItem(STORAGE_KEY, currentViews.toString());
+            }
+        }
+    } catch (err) {
+        // Fall back gracefully to localStorage without error
+    }
+
+    animateCounter(countElement, currentViews);
+}
+
+/**
+ * Smoothly animates the visitor counter digits
+ */
+function animateCounter(element, targetValue) {
+    const duration = 800;
+    const startValue = Math.max(0, targetValue - 24);
+    const startTime = performance.now();
+
+    function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeProgress = 1 - Math.pow(1 - progress, 2);
+        const currentNumber = Math.floor(startValue + (targetValue - startValue) * easeProgress);
+
+        element.textContent = currentNumber.toLocaleString();
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            element.textContent = targetValue.toLocaleString();
+        }
+    }
+
+    requestAnimationFrame(update);
 }
